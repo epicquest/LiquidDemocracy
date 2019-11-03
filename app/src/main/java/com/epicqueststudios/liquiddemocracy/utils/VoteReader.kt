@@ -9,7 +9,7 @@ object VoteReader {
     private val VOTE_PATTERN = Pattern.compile("(.+[\\w]+)( DELEGATE | PICK )(.+[\\w]+)", CASE_INSENSITIVE)
 
     fun readFile(filename:String): List<String>{
-        val uri = this.javaClass.classLoader.getResource(filename)
+        val uri = this.javaClass.classLoader!!.getResource(filename)
         return File(uri.toURI()).useLines{l ->
             return l.toList()
         }
