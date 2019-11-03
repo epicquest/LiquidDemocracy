@@ -1,0 +1,5 @@
+invalid line
+delegate invalid
+invalid delegate
+
+   delegate
