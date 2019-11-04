@@ -9,7 +9,7 @@ class VotingOutput {
     }
 
     private val votes: MutableMap<String, Int> = mutableMapOf()
-    var invalidVotes = 0
+    private var invalidVotes = 0
 
     fun addVote(name: String?) {
         if (name == null){
